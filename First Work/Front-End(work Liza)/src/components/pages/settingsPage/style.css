@@ -1,0 +1,46 @@
+body {
+  box-sizing: border-box;
+}
+
+.page-name {
+  margin: 2rem 0;
+  font-size: 1.5rem;
+}
+
+.main-wrapper div {
+  font-family: var(--font-main);
+}
+
+.settings li {
+  font-size: 1.25rem;
+  margin-bottom: 2.5rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.settings li img {
+  margin-right: 1rem;
+}
+
+.settings-elements {
+  display: block;
+  margin-left: 4rem;
+  line-height: 200%;
+  height: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+
+.settings-element {
+  user-select: none;
+}
+
+.active-el {
+  display: block;
+  height: auto;
+  opacity: 1;
+  margin-bottom: 2.5rem;
+}

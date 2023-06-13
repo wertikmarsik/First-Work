@@ -1,0 +1,226 @@
+.trade-wrapper {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.crypto-block {
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: ease-out 0.3s;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  font-family: var(--font-main);
+}
+
+.crypto-block:hover {
+  background-color: var(--clr-dark-grey);
+}
+
+.icon-wrapper {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: var(--clr-white);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 4rem;
+}
+
+.crypto-name {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.crypto-change-green,
+.crypto-change-red,
+.crypto-price {
+  width: 30%;
+}
+
+.crypto-change-green {
+  color: #30ac60;
+}
+
+.crypto-change-red {
+  color: #c60000;
+}
+
+.link-trade {
+  color: var(--clr-dark);
+  text-decoration: none;
+}
+
+.trade-crypto-wrapper {
+  display: grid;
+  gap: var(--grid-gap);
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(2, auto);
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.time-period {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.trade-panel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 2.875rem;
+}
+
+.crypto-table {
+  display: flex;
+  flex-direction: column;
+}
+
+.crypto-table > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.graphic-wrapper {
+  grid-column: 1/7;
+  grid-row: 1/2;
+  width: 100%;
+}
+
+.graphic-img {
+  width: 100%;
+}
+
+.graphic-img img {
+  width: 100%;
+}
+
+.time-period div {
+  color: #979797;
+  font-size: 0.875rem;
+  transition: 0.3s;
+  cursor: pointer;
+  padding: 0 0.25rem;
+  box-sizing: border-box;
+  height: 1.25rem;
+  align-items: center;
+  text-align: center;
+  border-radius: 0.125rem;
+}
+
+.currency-trade {
+  color: #979797;
+  font-size: 0.875rem;
+}
+
+.time-period div:hover {
+  background-color: var(--clr-dark-grey);
+}
+
+.crypto-name-content {
+  position: absolute;
+  border-radius: 5px;
+  top: 2rem;
+  left: 0;
+  right: 0;
+  display: none;
+  background-color: var(--clr-dark-grey);
+  color: #555555;
+  font-size: 1rem;
+  flex-direction: column;
+}
+
+.crypto-name-content div {
+  padding: 4px 12px;
+  box-sizing: border-box;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.crypto-name-content div:hover {
+  background-color: #979797;
+  border-radius: 5px;
+  color: var(--clr-white);
+}
+
+.trade-btn {
+  text-decoration: none;
+  color: var(--clr-dark);
+}
+
+.open {
+  display: flex;
+}
+
+.currency-dropdown {
+  font-size: 0.875rem;
+  border: 2px solid #979797;
+  border-radius: 5px;
+  background-color: #ebebeb;
+  min-width: 5.5rem;
+}
+
+.crypto-description {
+  grid-column: 1/6;
+  grid-row: 2/3;
+  width: 95%;
+}
+
+.crypto-table {
+  grid-column: 6/10;
+  grid-row: 2/3;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.crypto-calculator {
+  display: flex;
+  flex-direction: column-reverse;
+  grid-column: 7/10;
+  grid-row: 1/2;
+  width: 100%;
+}
+
+.calculator {
+  width: 100%;
+  height: 7.5rem;
+  background-color: var(--clr-dark-grey);
+  border-radius: 10px;
+  margin-bottom: 0.75rem;
+}
+
+.crypto-calculator p {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.top-elem {
+  background-color: var(--clr-dark-grey);
+  border-radius: 8px;
+  font-size: 13px;
+  padding: 10px 8px;
+}
+
+.crypto-green {
+  color: #41b936;
+}
+
+.crypto-red {
+  color: #c60000;
+}

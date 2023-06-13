@@ -1,0 +1,40 @@
+.transaction-container {
+  width: 100%;
+  background-color: var(--clr-white);
+  border-radius: 10px;
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.17);
+  box-sizing: border-box;
+  padding: 48px 90px 48px 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  overflow-y: auto;
+  height: calc(100vh - 12.5rem);
+}
+
+.transaction-container > div,
+.transaction-container > div > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.transaction-container > div > div {
+  width: 40%;
+}
+
+.transaction-container > div > p {
+  width: 25%;
+}
+
+.transaction-container > div {
+  justify-content: space-between;
+}
+
+.transaction-page-name {
+  margin: 2rem 0;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1.125rem;
+}

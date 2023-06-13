@@ -1,0 +1,165 @@
+body {
+  font-family: "Arial";
+  padding: 0;
+  margin: 0;
+}
+
+.login-page {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
+.animated-bg-login {
+  height: 100%;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+
+.login-wrapper {
+  background-color: #eeeeee;
+  width: 50vw;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0px 0px 50px #d17000;
+}
+
+.login-form {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form .logo {
+  width: 300px;
+  margin-bottom: 50px;
+}
+
+.login-form .header {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+
+.login-form .subheader {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 33px;
+}
+
+.login-form .form {
+  display: flex;
+  flex-direction: column;
+}
+
+.email-label,
+.password-label {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.login-form .email-input,
+.login-form .password-input {
+  box-sizing: border-box;
+  width: 325px;
+  height: 36px;
+  border: 1px solid #979797;
+  border-radius: 10px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.login-form .checkbox-label {
+  font-size: 14px;
+  color: #555555;
+  margin-left: 6px;
+}
+
+.login-form .form > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-form .sign-in {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+.login-form #account {
+  background-color: #5d2689;
+  margin-bottom: 12px;
+  margin-top: 34px;
+  padding: 11px 0;
+}
+
+.login-form #google {
+  box-sizing: border-box;
+  border: 1px solid #555555;
+  color: #555555;
+  margin-bottom: 34px;
+  padding: 9px 0;
+}
+
+.forgot-password {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #522882;
+  text-decoration: none;
+}
+
+.google-icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 7px;
+}
+
+.sign-up {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #555555;
+}
+
+.sign-up-href {
+  color: #5d2689;
+  margin-left: 5px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.log-link {
+  text-decoration: none;
+}

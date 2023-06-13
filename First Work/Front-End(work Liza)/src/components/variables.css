@@ -1,0 +1,17 @@
+:root {
+  --clr-dark: #000000;
+  --clr-light-grey: #f6f6f6;
+  --clr-dark-grey: #d9d9d9;
+  --clr-white: #ffffff;
+  --clr-yellow: #ffe150;
+  --clr-orange: #f49b1a;
+  --clr-green: #35d472;
+  --clr-chat: #e2e2e2;
+  --clr-light-purple: #5d2689;
+  --clr-dark-purple: #331b5e;
+  --grid-gap: 2rem;
+  --side-padding: 0 3rem;
+  --font-decor: "Electrolize", sans-serif;
+  --font-main: "Montserrat", sans-serif;
+  --line-height: 170%;
+}

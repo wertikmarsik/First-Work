@@ -1,0 +1,203 @@
+body {
+  box-sizing: border-box;
+}
+
+.block-1 {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  width: 95%;
+}
+
+.block-2 {
+  grid-column: 4/10;
+  grid-row: 1/2;
+  width: 100%;
+}
+
+.transaction-table {
+  background: var(--clr-light-grey);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.17);
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.wallet-wrapper {
+  display: grid;
+  column-gap: var(--grid-gap);
+  row-gap: 6.5rem;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(2, auto);
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.crypto-cards {
+  grid-column: 5/10;
+  grid-row: 2/3;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.crypto-card {
+  background: var(--clr-light-grey);
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.17);
+  border-radius: 6px;
+  padding: 1.125rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 7.5rem;
+  max-height: 7.5rem;
+}
+
+.crypto-card img {
+  max-height: 1.75rem;
+  margin-bottom: 0.625rem;
+}
+
+.percentage--green {
+  color: #30ac60;
+  margin-bottom: 1rem;
+}
+
+.percentage--red {
+  color: #c60000;
+  margin-bottom: 1rem;
+}
+
+.block-3 {
+  grid-column: 1/5;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.balance {
+  background: var(--clr-light-grey);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.17);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-main);
+  color: var(--clr-dark);
+  font-size: 2.25rem;
+  padding: 2.25rem 1.875rem;
+  box-sizing: border-box;
+  margin: 1.25rem 0 1.875rem;
+}
+
+.balance-functions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.balance-functions div {
+  background: #dadada;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.transaction-table > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.circle--yellow,
+.circle--blue,
+.circle--orange {
+  width: 0.875rem;
+  height: 0.875rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.circle--yellow {
+  border: 3px solid #face2b;
+}
+
+.circle--blue {
+  border: 3px solid #39bcff;
+}
+
+.circle--orange {
+  border: 3px solid #f49b1a;
+}
+
+.block-3 > ul {
+  padding: 0;
+}
+
+.block-3 > ul > li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.block-3 > ul > li:not(:last-child) {
+  margin-bottom: 1.75rem;
+}
+
+.square {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.625rem;
+  margin-right: 1rem;
+}
+
+.yellow {
+  background-color: var(--clr-yellow);
+}
+
+.orange {
+  background-color: var(--clr-orange);
+}
+
+.green {
+  background-color: var(--clr-green);
+}
+
+.diagram {
+  width: 11.25rem;
+  height: 11.25rem;
+}
+
+.block-name {
+  font-size: 1.5rem;
+}
+
+.transaction-table > div > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.transaction-table > div > div {
+  width: 40%;
+}
+
+.transaction-table > div > p {
+  width: 25%;
+}
+
+.link-transactions {
+  color: var(--clr-dark);
+  text-decoration: none;
+}

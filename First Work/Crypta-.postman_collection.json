@@ -1,0 +1,468 @@
+{
+	"info": {
+		"_postman_id": "56033791-0c97-47be-89d2-5d57faa5c38e",
+		"name": "Crypta\\",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20461823"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"wertik.marsik@gmail.com\",\r\n    \"username\": \"wertik.marsik@gmail.com\",\r\n    \"surname\": \"wertik.marsik@gmail.com\",\r\n    \"password\": \"wertik.marsik@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/register/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"ivan@gmail.com\",\r\n    \"password\": \"3234231321312\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/login/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Profile",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDYzNjNlYWFkM2RmNWJmYTRhNmNmNDQiLCJpYXQiOjE2ODQyMzUyNDd9.ngNm0faA28Bh4Ykg-qmKuRkmhH1G2oyFQlFMGSd19ws",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/user/profile/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"profile",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Transactions",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDYzODQ5NzE5Y2RjNWI3OGRmZGU0YWQiLCJpYXQiOjE2ODQyNDcxNTJ9.N-SGtrL7NUyEU-qplTQ98j_dhb7qUbCyEXYXG2auwiU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/transactions/getAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"transactions",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get 3 Transactions",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDYzODQ5NzE5Y2RjNWI3OGRmZGU0YWQiLCJpYXQiOjE2ODQyNDcxNTJ9.N-SGtrL7NUyEU-qplTQ98j_dhb7qUbCyEXYXG2auwiU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/transactions/getThree/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"transactions",
+						"getThree",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Currency",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDYzODQ5NzE5Y2RjNWI3OGRmZGU0YWQiLCJpYXQiOjE2ODQyNDcxNTJ9.N-SGtrL7NUyEU-qplTQ98j_dhb7qUbCyEXYXG2auwiU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/currency/getAll/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"currency",
+						"getAll",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get BTC",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDYzODQ5NzE5Y2RjNWI3OGRmZGU0YWQiLCJpYXQiOjE2ODQyNDcxNTJ9.N-SGtrL7NUyEU-qplTQ98j_dhb7qUbCyEXYXG2auwiU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/currency/getBTC/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"currency",
+						"getBTC",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get ETH",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDYzODQ5NzE5Y2RjNWI3OGRmZGU0YWQiLCJpYXQiOjE2ODQyNDcxNTJ9.N-SGtrL7NUyEU-qplTQ98j_dhb7qUbCyEXYXG2auwiU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/currency/getETH/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"currency",
+						"getETH",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get LTC",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDYzODQ5NzE5Y2RjNWI3OGRmZGU0YWQiLCJpYXQiOjE2ODQyNDcxNTJ9.N-SGtrL7NUyEU-qplTQ98j_dhb7qUbCyEXYXG2auwiU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/currency/getLTC/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"currency",
+						"getLTC",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDYyODQxYTkxMjhkZGQ0YmFkM2EzZjUiLCJpYXQiOjE2ODQxNzkzMDZ9.futBLrfNI1PvEvBuBLAjRoKzoUPLPqyK-wqMreXWr7w",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"avatar\": \"ddd@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/update/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"update",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Purchase",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDYzODQ5NzE5Y2RjNWI3OGRmZGU0YWQiLCJpYXQiOjE2ODQyNDYxMzV9.hUz-RCapPoF-dG5k3tfP05Vpn3uw-7mfFfSTpruAPvY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"currencyName\": \"ETH\",\r\n    \"quantity\": 2,\r\n    \"secondCurrencyName\": \"USD\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/purchase/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"purchase",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sell",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDYzODQ5NzE5Y2RjNWI3OGRmZGU0YWQiLCJpYXQiOjE2ODQyNDYxMzV9.hUz-RCapPoF-dG5k3tfP05Vpn3uw-7mfFfSTpruAPvY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"currencyName\": \"BTC\",\r\n    \"quantity\": 10,\r\n    \"secondCurrencyName\": \"USD\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/sell/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"sell",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDYzODQ5NzE5Y2RjNWI3OGRmZGU0YWQiLCJpYXQiOjE2ODQyNDYxMzV9.hUz-RCapPoF-dG5k3tfP05Vpn3uw-7mfFfSTpruAPvY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"currencyName\": \"BTC\",\r\n    \"quantity\": 10,\r\n    \"referalCode\": \"3533a2ff2acb846a099eee82ca2fcc5148f8eda75bba9e883b066eb8c9729cab8ee46b9866b45a53eb465f91b2aedc9b5346\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/send/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"send",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reset Password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"ivan@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/reset-password/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"reset-password",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reset Password 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"password\": \"dasdas2321132\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/6463849719cdc5b78dfde4ad/b4ee7478de62263f40db1c2291181606b901c83e86f6c81e295087c1d6193344",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"6463849719cdc5b78dfde4ad",
+						"b4ee7478de62263f40db1c2291181606b901c83e86f6c81e295087c1d6193344"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "Bearer",
+			"value": "Bearer "
+		}
+	]
+}

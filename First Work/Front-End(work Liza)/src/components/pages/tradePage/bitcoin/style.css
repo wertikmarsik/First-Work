@@ -1,0 +1,23 @@
+.crypto-name-block-bitcoin {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  background-color: var(--clr-yellow);
+  border-radius: 5px;
+  height: 2rem;
+  padding: 0 1rem;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+}
+
+.price-block-bitcoin {
+  background-color: var(--clr-yellow);
+  padding: 18px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
